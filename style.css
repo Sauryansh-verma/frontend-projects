@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+    padding: .7rem 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav p{
+    font-size: .8rem;
+}
+nav .leftNav{
+    display: flex;
+    gap: 1.3rem;
+    align-items: center;
+}
+nav .leftNav img{
+    height: 1.4rem;
+    margin-right: 1rem;
+}
+nav .rightNav{
+    display: flex;
+    gap: 1.3rem;
+    align-items: center;
+}
+nav .rightNav img{
+    height: 2.3rem;
+    width: 2.3rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.ri-shopping-cart-line, .ri-search-line, .ri-arrow-drop-down-line{
+    font-size: 1rem;
+}
+nav p:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 1.8px;
+}
+section{
+    display: flex;
+    align-items: center;
+    background-image: url(./assets/image\ copy\ 3.png);
+    height: 37.5rem;
+}
+section .text{
+    margin-left: 12rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+section .text h1{
+    font-size: 2.3rem;
+    font-weight: 500;
+    word-spacing: 2px;
+}
+section .text p{
+    line-height: 1.6;
+}
+section .text button{
+    width: fit-content;
+    padding: 10px 14px;
+    background-color: #0067b8;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}

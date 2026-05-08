@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    height: 100%;
+    background-image: url(image.png);
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 4rem 0 4rem;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+}
+nav div{
+    height: 3.03rem;
+    width: 3em;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.17);
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav div i{
+    font-size: 1.7rem;
+    font-weight: 300;
+    opacity: .7;
+}
+nav div .ri-menu-fill{
+    color: rgb(0, 119, 255);
+}
+nav img{
+    height: 6.5rem;
+}
+main .top{
+    display: flex;
+    justify-content: space-between;
+}
+main .top div input{
+    width: 500px;
+    padding: 1rem 8rem 1rem 3rem;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.17);
+}
+.searchbar{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.top div label{
+    font-size: 1.4rem;
+    position: absolute;
+    left: 4%;
+    margin-bottom: 3px;
+    opacity: .7;
+}
+.top .lft{
+    padding: 12px 1.2rem;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.17);
+    border-radius: 50px;
+    opacity: .7;
+}
+.lft p i{
+    margin-left: 15px;
+    font-size: 1.5rem;
+}
+.top .right{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.top div .rght svg{
+    height: 1.5rem; 
+}
+.rght{
+    height: 3.13rem;
+    width: 3.1em;
+    border-radius: 1.2rem;
+    border: 1px solid rgba(0, 0, 0, 0.17);
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+section .card{
+    height: 55vh;
+    width: 20vw;
+    background-color: white;
+    border-radius: 2rem;
+    padding: 1.5rem;
+}
+.card p{
+    color: rgb(88, 79, 79);
+}
+.card .top .heart{
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.17);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heart i{
+    font-size: 1.4rem;
+}
+.card .top{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+.card .blur{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    background-color: #7cfc98;
+    border-radius: 50%;
+    filter: blur(70px);
+    height: 15rem;
+    width: 15rem;
+    z-index: 0;
+}
+.card img{
+    margin-top: 2rem;
+    height: 65%;
+    position: absolute;
+}
+.card .bottom h2{
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-right: 9rem;
+}
+.card .bottom .btm .left{
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 17px;
+    background-color: #eaf5ee;
+    border-radius: 50px;
+    color: #66b25f;
+}
+.bottom .right{
+    height: 3.13rem;
+    width: 3.1em;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.17);
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottom .right i{
+    font-size: 1.5rem;
+}
+.bottom .btm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section .card2 .blur{
+    background-color: rgb(235, 53, 89);
+}
+.card2 img{
+    height: 60%;
+    transform: translate(-10%, 9%);
+}
+.card2 .bottom h2{
+    margin-right: 12rem;
+}
+.card3 img{
+    margin-top: 11%;
+    height: 60%;
+}
+.card3 .blur{
+    background-color: brown;
+}
+.card3 .bottom h2{
+    margin-right: 11rem;
+}
+.card4 .blur{
+    background-color: rgb(57, 57, 241);
+}
+.card4 .bottom h2{
+    margin-right: 15rem;
+}
+.pokeball{
+    height: 2.6rem;
+    opacity: .4;
+}
+.footer{
+    margin-top: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer p{
+    opacity: .4;
+}

@@ -60,10 +60,10 @@ nav span{
     letter-spacing: 3px;
 }
 .hero .leftSection h1{
-    font-size: 11rem;
+    font-size: 8vw;
 }
 .hero .leftSection p{
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     font-weight: 400;
 }
 .leftSection div{
@@ -82,7 +82,7 @@ nav span{
     font-weight: 700;
 }
 .hero .rightSection img{
-    height: 50rem;
+    height: 45vw;
     position: absolute;
     right: 10%;
     top: -50%;

@@ -8,7 +8,7 @@ html, body{
     width: 100%;
 }
 body{
-    font-family: "Bebas Neue", sans-serif;
+    font-family: sans-serif;
     background-color: #fcf4ec;
 }
 
@@ -68,6 +68,7 @@ nav img{
     left: 6%;
     top: 50%;
     transform: translateY(-50%);
+    color: #ef9b26;
 }
 .ri-shopping-cart-line{
     right: 10%;
@@ -78,4 +79,193 @@ nav img{
     width: 100%;
     padding: 1rem 4rem 1rem 3rem;
     border-radius: 50px;
+    background-color: #fcf4ec;
+}
+main{
+    padding: 4vw 4vw 0 4vw;
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5vw;
+}
+.hero .left{
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+}
+.left .tagline{
+    display: flex;
+    align-items: center;
+    gap: .8vw;
+    padding: .5rem 1rem;
+    background-color: #e7ead5;
+    border: 1px solid #61932a;
+    width: fit-content;
+    border-radius: 50px;
+    color: #61932a; 
+}
+.tagline .ri-star-fill{
+    color: #61932a;
+}
+.tagline .text{
+    font-size: clamp(.7rem, .7vw, 1rem);
+    font-weight: 500;
+}
+.left h1{
+    font-size: clamp(3rem, 5vw, 8vw);
+    font-weight:500;
+    font-family: "Bebas Neue", sans-serif;
+    line-height: 1;
+    letter-spacing: 2px;
+}
+.left h1 span{
+    color: #125b3a;
+}
+.left .summary{
+    font-weight: 500;
+    font-size: clamp(.8rem, 1vw, 1.3rem);
+    line-height: 160%;
+    opacity: .7;
+}
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.btns .cart-btn{
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    background-color: #0f0f0f;
+    border-radius: 50px;
+    padding: .5vw 2vw .5vw .5vw;
+}
+.cart-btn i{
+    font-weight: 800;
+    padding: .5vw;
+    background-color: #fbcc6a;
+    border-radius: 50%;
+}
+.cart-btn p{
+    color: #e7ead5;
+    font-family: "Bebas Neue", sans-serif;
+
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.btns .txt-btn{
+    display: flex;
+    background-color: #fefaf4;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.164);
+    padding: .7vw 0;
+}
+.btns .txt-btn span{
+    padding: 0rem 1.2vw;
+    color: #125b3a;
+    font-size: clamp(1rem, 1.2vw, 1.5rem);
+}
+.btns .txt-btn p{
+    padding: 0rem 1.2vw;
+    color: #da2430;
+    font-size: clamp(1rem, 1.2vw, 1.5rem);
+    border-right: 1px solid rgba(0, 0, 0, 0.329);
+    border-left: 1px solid rgba(0, 0, 0, 0.329);
+}
+.right img{
+    height: 17vw;
+}
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 35vw;
+    min-width: 10rem;
+}
+.feature-item{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+.feature-item i{
+    padding: .3vw;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+.ri-leaf-fill{
+    border: 1px solid #125b3a;
+    color: #125b3a;
+    background-color: #125b3a25;
+}
+.ri-fire-line{
+    color: #ef9b26;
+    background-color: #fbe9ac;
+    border: 1px solid #ef9b26;
+}
+.ri-poker-hearts-fill{
+    color: #db2d38;
+    border: 1px solid #db2d38;
+    background-color: #da343f27;
+}
+.feature p{
+    font-size: clamp(.7rem, 1.2vw, 1.2rem);
+    font-weight: 500;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1px;
+}
+.feature span{
+    font-size: .8rem;
+    opacity: .7;
+}
+.mid .circle{
+    height: 30vw;
+    width: 30vw;
+    background-color: #d8d9b9;
+    border-radius: 50%;
+}
+.mid{
+    position: relative;
+}
+.mid img{
+    height: 40vw;
+    position:absolute;
+    top: 0;
+    right: 0%;
+    z-index: 1;
+    transform: translate(10%, -13%);
+}
+.snack-container{
+    height: 9vw;
+    background-color: #125b3a;
+    border-radius: 2vw;
+    padding: clamp(1rem, 1.3vw, 1.4vw);
+}
+.snack-container div h2{
+    font-family: "Bebas Neue", sans-serif;
+    color: #e7ead5;
+    font-size: clamp(1.5rem, 2vw, 2.4vw);
+    line-height: 1;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.snack-container div i{
+    font-size: .8vw;
+    padding: .6vw;
+    background-color: #e7ead5;
+    border-radius: 50%;
+    height: fit-content;
+    width: fit-content;
+}
+.snack-container .txt-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.3vw;
+}
+.arrow{
+    display: flex;
+    justify-content: space-between;
 }

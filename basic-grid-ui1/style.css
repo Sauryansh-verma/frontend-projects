@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    padding: 1rem 0;
+}
+main{
+    height: 100%;
+    width:min(1400px, 100% - 2rem);
+    margin-inline:auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr 1.1fr;
+    grid-template-rows: .9fr 1fr 1.8fr .8fr 1fr;
+    grid-template-areas:
+    "left-top left-top menu-card right-top"
+    "left-top left-top menu-card right-center"
+    "left-bottom center menu-card right-center"
+    "left-bottom awards-card right-bottom right-bottom"
+    "left-bottom qr-card right-bottom right-bottom";
+    gap: 2%;
+}
+div{
+    
+    
+}
+.left-top
+{
+    grid-area: left-top;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    border-radius: 2vw;
+    background-color: #171718;
+}
+.left-top div:first-child
+{
+    background-color: #131215;
+    padding: 1rem;
+    height: 100%;
+    width: 1fr;
+}
+.left-top div:first-child img
+{
+    height: 100%;
+    background-color: #b15ffc;
+    border-radius: 1vw;
+}
+.left-top div:last-child
+{
+    height: 100%;
+}
+.left-top div:last-child img
+{
+    height: 100%;
+    background-color: #171718;
+    border-radius: 2vw;
+}
+.menu-card
+{
+    grid-area: menu-card;
+    padding: 2vw;
+    background-color: #171718;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 2vw;
+}
+.menu-card p
+{
+    padding: 1.3vw;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    opacity: .9;
+}
+.menu-card > div
+{
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #333333
+}
+.menu-card p i
+{
+    font-size: 1.4rem;
+}
+.menu-card p span{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.menu-card > div p:nth-child(4){
+    background-color: #333333;
+    border-radius: 50px;
+}
+.menu-card div p:nth-child(4) i{
+    color: #d6f156;
+}
+.right-top
+{
+    grid-area: right-top;
+    padding: 2vw .5vw;
+    background-color: #b15ffc;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    color: white;
+}
+.right-top p:first-child{
+    display: flex;
+    align-items: center;
+    gap: .2vw;
+    padding-right: 1vw;
+    border-right: 1px solid #cccc
+}
+.right-top p span{
+    font-size: .9rem;
+}
+.right-top p:first-child{
+    font-size: 2vw;
+}
+.right-top p + p{
+    display: flex;
+    align-items: center;
+    gap: .6vw;
+}
+.right-top p + p > i{
+    font-size: 1.5vw;
+}
+.left-bottom
+{
+    grid-area: left-bottom;
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    background-color: #171718;
+    padding: 1vw;
+    border: 1px solid #d6f156;
+    border-radius: 2vw;
+    display: flex;
+    flex-direction: column;
+} 
+.left-bottom h1{
+    font-size: 7vw;
+    font-weight: 100;
+}
+.left-bottom h1 + p{
+    color: #b15ffc;
+    font-size: 1.8rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    padding-bottom: 4rem;
+    border-bottom: 2px solid #333333;
+    margin-bottom: 2vw;
+}
+.left-bottom p + p{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 1.1;
+    opacity: .9;
+}
+.left-bottom p + p i{
+    font-size: 2.2vw;
+    color: #111;
+    background-color: #d6f156;
+    border-radius: 10px;
+}
+.left-bottom img{
+    width: 100%;
+    transform: translate(0, -10%);
+    opacity: .8;
+}
+.center
+{
+    grid-area: center;
+    color: white;
+    background-color: #171718;
+    padding: 2vw;
+    border-radius: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.center p:first-child{
+    display: flex;
+    align-items: center;
+    gap: .9vw;
+    margin-bottom: 1vw;
+}
+.center p:first-child i{
+    color: #111;
+    background-color: #d6f156;
+    font-size: 1.3vw;
+    padding: 5px;
+    border-radius: 50%;
+}
+.center p:first-child span{
+    font-size: .75rem;
+    letter-spacing: 1px;
+    color: #dddd;
+    font-weight: 500;
+}
+.center > p:first-child + p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    opacity: .9;
+}
+.center p:last-child{
+    font-size: .8rem;
+    font-weight: 400;
+    opacity: .6;
+}
+
+.right-center
+{
+    grid-area: right-center;
+    overflow: hidden;
+    background-image: url(right.png);
+    background-position: -25px 30px ;
+    background-repeat: no-repeat;
+    background-color: #d6f156;
+    background-size: cover;
+    border-radius: 2vw;
+}
+.awards-card
+{
+    grid-area: awards-card;
+    background-color: #171718;
+    border-radius: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.awards-card img{
+    height: 4vw;
+}
+.qr-card
+{
+    grid-area: qr-card;
+    background-color: #d6f156;
+    padding: 1.5vw;
+    border-radius: 2vw;
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    position: relative;
+}
+.qr-card img{
+    height: 3.2vw;
+}
+.qr-card div p:first-child{
+    font-size: .9rem;
+    font-weight: 500;
+}
+.qr-card div p + p{
+    font-size: .8rem;
+    font-weight: 400;
+    opacity: .9;
+    margin-top: .7rem;
+}
+.qr-card i{
+    position: absolute;
+    top: 20%;
+    font-size: 1.5rem;
+    right: 10%;
+    opacity: .8;
+}
+.right-bottom
+{
+    grid-area: right-bottom;
+    background-color: white;
+    border-radius: 2vw;
+    padding: 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.right-bottom h2{
+    font-size: 2.5rem;
+    line-height: 1;
+    font-weight: 600;
+}
+.right-bottom div:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.right-bottom div + div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.right-bottom div + div h1{
+    font-size: 4vw;
+}
+.right-bottom div + div img{
+    height: 7vw;
+    transform: translate(0, -40%);
+}
+.right-bottom div + div button{
+    padding: .4vw 1vw;
+    background-color: #b15ffc;
+    border: none;
+    border-radius: .6vw;
+    transform: translate(0, -30px);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1vw;
+}
+.right-bottom div + div button span{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.right-bottom div + div button i{
+    font-size: 1.8rem;
+    font-weight: 200;
+}

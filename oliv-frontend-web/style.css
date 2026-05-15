@@ -1,0 +1,704 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   font-family: 'Cormorant Garamond', serif;
+   padding: 0 6.2rem;
+}
+/* Navigation Bar (header) */
+nav{
+    margin-top: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    border-bottom: 1px solid #1111111c;
+}
+.left-nav{
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+}
+.left-nav img{
+    height: 1.8vw;
+}
+.left-nav p{
+    background-color: #edded5;
+    padding: .3rem .5rem;
+    border-radius: 50px;
+    font-size: .9rem;
+}
+.right-nav{
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+    justify-content: start;
+    width: 50%;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 2.3rem;
+}
+.nav-links a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    padding-bottom: 1px;
+}
+a::after{
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: #000;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    transition: ease-out .3s;
+
+}
+a:hover::after{
+    width: 100%;
+}
+.nav-btn{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+.nav-btn p span{
+    background-color: #edded5;
+    padding:  1px 4px;
+    border-radius: 50%;
+}
+.nav-btn button{
+    background-color: #fff;
+    padding: .68rem .89rem;
+    border-radius: 50px;
+    border: 1px solid;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+}
+button:hover{
+    color: #fff;
+    background-color: #000;
+}
+
+/* hero section */
+.hero{
+    height: calc(100vh - 10vh - 20px);
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    justify-content: center;
+}
+.hero h1{
+    font-family: 'General Sans', sans-serif;
+    font-size: 6.5vmax;
+    font-weight: 100;
+    width: 80vw;
+    line-height: .8;
+}
+.hero p{
+    font-size: 1.5vmax;
+    width: 40%;
+    line-height: 1.5;
+}
+.hero button{
+    width: fit-content;
+    padding: 1.1rem 1.7rem;
+    font-size: 1rem;
+    background-color: #000;
+    color: #ffffffd3;
+    border-radius: 50px;
+    margin-top: .7rem;
+    border: none;
+    font-weight: 400;
+}
+
+
+/* Marquee */
+.marquee{
+    overflow: hidden;
+    padding: 2rem 0;
+    margin: 2rem 0;
+}
+.marquee-track{
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+    animation: scroller 10s linear infinite;
+}
+.marquee-track img{
+    height: 2.7rem;
+}
+@keyframes scroller{
+    from{
+        transform: translate(0%)
+    }to{
+        transform: translate(-50%)
+    }
+}
+
+/* ourWork */
+.ourWork{
+    margin-top: 4rem;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    gap: 4.25rem;
+}
+.container{
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.ourWork .container div{
+    height: 90%;
+    width: 23%;
+    background-color: #f4f4f5;
+    padding: 60px 50px 0 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.ourWork .container div h2{
+    font-size: 1.84vmax;
+    font-weight: 400;
+}
+.ourWork div p:nth-child(2){
+    font-size: 1.2rem;
+    opacity: .8;
+    line-height: 1.4;
+    width: 66%;
+}
+.ourWork div p:last-child{
+    text-decoration: underline;
+}
+.ourWork .text{
+    font-size: .84rem;
+    padding-bottom: .5rem;
+    opacity: .8;
+}
+
+/* ourValues */
+.top-text{
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #1111112c;
+}
+.top-text h1{
+    font-size: 3.5vmax;
+    font-weight: 400;
+}
+.top-text button{
+    padding: .9rem 1.3rem;
+    border: 1px solid #000;
+    border-radius: 50px;
+    font-family: serif;
+    font-size: 1rem;
+}
+.box-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70vh 70vh;
+    grid-template-areas:
+    "box1 box2"
+    "box3 box4";
+    gap: 1.9vw;
+}
+.box-container div .card-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+}
+.box1{
+    grid-area: box1;
+}
+.box2{
+    grid-area: box2;
+}
+.box3{
+    grid-area: box3;
+}
+.box4{
+    grid-area: box4;
+}
+.box-container > div > .img{
+    height: 90%;
+    width: 100%;
+    overflow: hidden;
+}
+.box-container > div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: ease .7s;
+    transform-origin: center top;
+}
+.box-container > div{
+    overflow: hidden;
+}
+.box-container > div img:hover{
+    transform: scale(1.08);
+}
+.card-text p{
+    font-size: 1.25rem;
+}
+.card-text button{
+    padding: .3rem .6rem;
+    border-radius: 50px;
+    border: 1px solid #000;
+    font-size: 1rem;
+    font-family: serif;
+}
+.ourValues > p{
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    height: 20vh;
+    border: 1;
+    border-bottom: 1px solid #1111112c;
+}
+.ourValues > p span{
+    font-size: .84rem;
+    opacity: .8;
+    padding-bottom: 2rem;
+}
+
+
+/* Approach Grid */
+.approach-grid{
+    margin-top: 72px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50vh 50vh;
+    gap: 3rem;
+    grid-template-areas:
+    "approachCard1 approachCard2 approachCard3 ."
+    ". approachCard4 approachCard5 approachCard6";
+}
+.approachCard1{
+    grid-area: approachCard1;
+    background-color: #f1f5f9;
+}
+.approachCard2{
+    grid-area: approachCard2;
+    background-color: #f1f6f5;
+}
+.approachCard3{
+    grid-area: approachCard3;
+    background-color: #f1f6f5;
+}
+.approachCard4{
+    grid-area: approachCard4;
+    background-color: #f8f8f8;
+}
+.approachCard5{
+    grid-area: approachCard5;
+    background-color: #f8ede3;
+}
+.approachCard6{
+    grid-area: approachCard6;
+    background-color: #fffae7;
+}
+.approachCard1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.approach-grid > div{
+    padding: 50px;
+}
+.approachCard1 div{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.approachCard1 div p{
+    font-size: .7vw;
+}
+.approachCard1 div h3{
+    font-weight: 400;
+    font-size: 1.6rem;
+    width: 80%;
+}
+.approachCard1 button{
+    font-family: serif;
+    padding: .9rem 1.7rem;
+    border-radius: 50px;
+    border: none;
+    width: fit-content;
+    font-size: .9rem;
+    background-color:#000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.approachCard1 button > i{
+    font-size: 1.2rem;
+}
+.approach-grid > div:not(.approachCard1) div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 62%;
+}
+.approach-grid > div:not(.approachCard1) p{
+    font-size: .95rem;
+}
+.approachCard2 h3, .approachCard3 h3, .approachCard6 h3{
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+.approachCard4 h3, .approachCard5 h3{
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+
+/* INFOS */
+.infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 15vh;
+    height: 100vh;
+    padding-bottom: 6vh;
+    border-bottom: 1px solid #1111112c;
+    
+}
+.infos > div{
+    width: 50%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    justify-content: space-between;
+}
+.infos > div h1{
+    font-size: 3.3vmax;
+    font-weight: 100;
+}
+.infos > div div{
+    display: flex;
+    gap: 2.5vh;
+}
+.infos > div div p{
+    font-size: 1.15rem;
+    line-height: 1.5;
+    opacity: .8;
+}
+
+
+/* Our Team */
+.ourTeam .top-text{
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ourTeam .top-text h1{
+    font-size: 3.2vmax;
+    font-weight: 400;
+}
+.ourTeam .cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 65vh;
+    gap: 3vmax;
+}
+.card1{
+    background-color: #f1f6f5;
+    padding: 3.75rem 0 0 3.75rem;
+}
+.card1 div{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+.card1 div p:first-child{
+    font-size: .92rem;
+    display: flex;
+    gap: 2vh;
+}
+.card1 div h3{
+    font-size: 1.85rem;
+    font-weight: 500;
+}
+.card1 div h3 + p{
+    font-size: .85rem;
+    opacity: .7;
+    line-height: 1.8;
+    font-weight: 500;
+}
+.card1 button{
+    padding: .9rem 1.3rem;
+    border: 1px solid #000;
+    border-radius: 50px;
+    font-family: serif;
+    font-size: 1rem;
+    background-color: #000;
+    color: #fff;
+    margin-top: 5vmax;
+}
+.cards > div:not(.card1){
+    display: flex;
+    flex-direction: column;
+}
+.cards > div:not(.card1) .img{
+    height: 85%;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.card2 .img{
+    background-image: url(assets/teamimg1.webp);
+}
+.card3 .img{
+    background-image: url(assets/teamimg2.webp);
+}
+.card4 .img{
+    background-image: url(assets/teamimg3.webp);
+}
+.cards > div .text{
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cards > div .text p{
+    font-size: 1.25rem;
+}
+.cards > div .text button{
+    padding: .3rem .6rem;
+    border-radius: 50px;
+    border: 1px solid #000;
+    font-size: 1rem;
+    font-family: serif;
+}
+.img .icons{
+    position: absolute;
+    right: 8%;
+    bottom: -9%;
+    transition: .7s;
+}
+.img .icons i{
+    padding: .65rem;
+    margin: .12rem;
+    background-color: #000;
+    border-radius: 50%;
+    color: #fff;
+}
+.img:hover .icons{
+    bottom: 9%;
+}
+
+
+/* logoipsum */
+.logoipsum{
+    margin-top: 10rem;
+    height: 50vh;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid #1111112c;
+}
+.logoipsum .img{
+    width: 20%;
+}
+.logoipsum div + div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 3vmax;
+}
+.logoipsum h2{
+    font-size: 2vmax;
+    font-weight: 1;
+}
+
+
+/* Contact */
+.contact{
+    margin-top: 5rem;
+    padding: 6.25rem 0 0 6.25rem;
+    height: 80vh;
+    background-color: #f1f6f5;
+    display: flex;
+}
+.contact > p{
+    width: 30%;
+}
+.contact div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vmax;
+}
+.contact div h2{
+    font-size: 4vmax;
+    font-weight: 100;
+    line-height: 1.3;
+}
+.contact div p{
+    font-size: 1.5rem;
+    line-height: 1.3;
+}
+.contact div button{
+    padding: .9rem 1.3rem;
+    border: 1px solid #000;
+    border-radius: 50px;
+    font-family: serif;
+    font-size: 1rem;
+    background-color: #000;
+    color: #fff;
+    margin-top: 2vmax;
+    width: fit-content;
+}
+
+
+/* Blog */
+.blog > p{
+    height: 10vh;
+    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+}
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 60vh;
+    gap: 2vmax;
+}
+.product-container .product-card{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.product-card .img{
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+}
+.product-card .img img{
+    height: 100%;
+    width: 100%;
+    transition: ease-out .5s;
+    transform-origin: top center;
+}
+.product-card .img:hover img{
+    transform: scale(1.1);
+}
+.product-card p:first-child{
+    line-height: 1.4;
+}
+.product-card p + p{
+    font-size: 1.02rem;
+    margin: 1vmax 0;
+}
+
+
+/* Footer */
+footer > div:first-child{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 60vh;
+    gap: 2.5vmax;
+    margin-top: 1rem;
+}
+footer > div:first-child div:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 3vmax;
+    
+}
+footer > div:first-child div:first-child img{
+    height: 1.5rem;
+    width: fit-content;
+}
+footer > div:first-child div:first-child .icons{
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+}
+footer > div:first-child div:first-child .icons i{
+    padding: .5rem;
+    background-color: #f0f8ff;
+    font-size: 1.17rem;
+    border-radius: 50%;
+}
+
+.div1{
+    display: flex;
+    flex-direction: column;
+    gap: 1vmax;
+    height: 85%;
+}
+.div1 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50%;
+}
+.div1 button{
+    padding: 1rem 1.4rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-family: serif;
+    font-size: 1rem;
+    width: fit-content;
+}
+.div1 p, .div2 p ,.div3 p{
+    padding: 1.4rem 0;
+    border-bottom: 1px solid #1111112c;
+}
+.div1 a, .div2 a, .div3 a{
+    color: #000;
+    text-decoration: none;
+    position: relative;
+    display: inline;
+    width: fit-content;
+}
+.div2 div{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50%;
+}
+.div3 div{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50%;
+}
+.div3 div{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40%;
+}
+
+footer > div + div{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #1111112c;
+}
+.ftr-btm p:first-child span, .ftr-btm p+p{
+    opacity: .5;
+    font-weight: 500;
+}
+.ftr-btm p + p span{
+    margin-right: 2rem;
+}

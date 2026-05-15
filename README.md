@@ -1,7 +1,13 @@
 # Frontend Projects
 
 ## Projects
-- Microsoft Landing UI
-- Pokemon Landing UI
-- Pokemon Dashboard UI
-- Astro Jacket UI
+- Microsoft Landing Page
+- Pokemon Landing Page
+- Pokemon Dashboard
+- Astro Jacket Page
+- Cocktail Page
+- Reload Agency Page
+- Sunmall Snaks Page
+- Basic Grid Page
+- Digital Hunters UI
+- Oliv Frontend Web
